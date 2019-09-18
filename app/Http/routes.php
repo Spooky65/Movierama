@@ -36,6 +36,9 @@ Route::get( '/',       ['as' => 'backslash',   'uses' => 'HomeController@index']
 Route::get( 'home',    ['as' => 'home',        'uses' => 'HomeController@index']);
 Route::get( 'welcome', ['as' => 'welcome',     'uses' => 'HomeController@welcome']);
 
+// Movie routes...
+Route::get( 'movie/all', ['as' => 'movie.all',     'uses' => 'MovieController@all']);
+
 // Routes in this group must be authorized.
 Route::group(['middleware' => 'authorize'], function () {
     // Application routes...
@@ -157,6 +160,8 @@ Route::group(['middleware' => 'authorize'], function () {
 
 
     }); // End of ADMIN group
+
+
 
     // Uncomment to enable Rapyd datagrid.
     require __DIR__.'/rapyd.php';

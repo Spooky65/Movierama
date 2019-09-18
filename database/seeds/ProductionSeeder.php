@@ -369,6 +369,16 @@ class ProductionSeeder extends Seeder
         ]);
         $userRoot->roles()->attach($roleAdmins->id);
 
+        $userNico = User::create([
+            "first_name"    => "Nicolas",
+            "last_name"     => "Diot",
+            "username"      => "nico",
+            "email"         => "nico@email.com",
+            "password"      => "nicolas",
+            "auth_type"     => "internal",
+            "enabled"       => true
+        ]);
+        $userNico->roles()->attach($roleUsers->id);
 
         ////////////////////////////////////
         // Create menu: root

@@ -18,6 +18,23 @@ class DevelopmentSeeder extends Seeder
     {
 
         // Add migration code for the development environment.
+        $json = file_get_contents('/var/www/lesk/database/movie_ids_09_16_2019.json');
+        $json_Object = json_decode($json);
+        foreach ($json_Object as $moviejson)
+        {
+            $movie = Movie::create([
+                'adult'            => $moviejson->adult,
+                'id'               => $moviejson->id,
+                'original_title'   => $moviejson->original_title,
+                'popularity'       => $moviejson->popularity,
+                'video'            => $moviejson->video,
+
+            ]);
+            //$movie->save();
+        }
+        
+        
+        
 
     }
 }
