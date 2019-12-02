@@ -1,7 +1,7 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
     "content-hash": "555a3c08bb4f99c93f4096059ba8961b",
@@ -1399,7 +1399,7 @@
             "time": "2016-12-10T11:39:28+00:00"
         },
         {
-            "name": "jeremeamia/SuperClosure",
+            "name": "jeremeamia/superclosure",
             "version": "2.2.0",
             "source": {
                 "type": "git",
@@ -1825,16 +1825,16 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/libern/laravel-sql-logging.git",
-                "reference": "60493551f1426d947d311cfe19aee99208341e7a"
+                "reference": "5f2a7b5642a4c14e25c70ae76298eca7b1d36f24"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/libern/laravel-sql-logging/zipball/60493551f1426d947d311cfe19aee99208341e7a",
-                "reference": "60493551f1426d947d311cfe19aee99208341e7a",
+                "url": "https://api.github.com/repos/libern/laravel-sql-logging/zipball/5f2a7b5642a4c14e25c70ae76298eca7b1d36f24",
+                "reference": "5f2a7b5642a4c14e25c70ae76298eca7b1d36f24",
                 "shasum": ""
             },
             "require": {
-                "illuminate/support": "5.0.x|5.1.x|5.2.x|5.3.x",
+                "illuminate/support": "5.0.x|5.1.x|5.2.x|5.3.x|5.5.x",
                 "monolog/monolog": "~1.11",
                 "php": ">=5.4.0"
             },
@@ -1872,7 +1872,7 @@
                 "query",
                 "sql"
             ],
-            "time": "2016-10-21T14:03:05+00:00"
+            "time": "2017-10-07T08:26:25+00:00"
         },
         {
             "name": "maatwebsite/excel",
@@ -3196,16 +3196,16 @@
         },
         {
             "name": "symfony/http-foundation",
-            "version": "v2.7.14",
+            "version": "v2.7.51",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/http-foundation.git",
-                "reference": "5d4e7461f0856a96bdceefc311d8cb8d50740627"
+                "reference": "b67e5cbd2bf837fb3681f2c4965826d6c6758532"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/http-foundation/zipball/5d4e7461f0856a96bdceefc311d8cb8d50740627",
-                "reference": "5d4e7461f0856a96bdceefc311d8cb8d50740627",
+                "url": "https://api.github.com/repos/symfony/http-foundation/zipball/b67e5cbd2bf837fb3681f2c4965826d6c6758532",
+                "reference": "b67e5cbd2bf837fb3681f2c4965826d6c6758532",
                 "shasum": ""
             },
             "require": {
@@ -3248,7 +3248,7 @@
             ],
             "description": "Symfony HttpFoundation Component",
             "homepage": "https://symfony.com",
-            "time": "2016-06-06T11:03:51+00:00"
+            "time": "2019-04-16T09:58:21+00:00"
         },
         {
             "name": "symfony/http-kernel",
@@ -3334,16 +3334,16 @@
         },
         {
             "name": "symfony/polyfill-mbstring",
-            "version": "v1.2.0",
+            "version": "v1.13.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-mbstring.git",
-                "reference": "dff51f72b0706335131b00a7f49606168c582594"
+                "reference": "7b4aab9743c30be783b73de055d24a39cf4b954f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/polyfill-mbstring/zipball/dff51f72b0706335131b00a7f49606168c582594",
-                "reference": "dff51f72b0706335131b00a7f49606168c582594",
+                "url": "https://api.github.com/repos/symfony/polyfill-mbstring/zipball/7b4aab9743c30be783b73de055d24a39cf4b954f",
+                "reference": "7b4aab9743c30be783b73de055d24a39cf4b954f",
                 "shasum": ""
             },
             "require": {
@@ -3355,7 +3355,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.2-dev"
+                    "dev-master": "1.13-dev"
                 }
             },
             "autoload": {
@@ -3389,7 +3389,7 @@
                 "portable",
                 "shim"
             ],
-            "time": "2016-05-18T14:26:46+00:00"
+            "time": "2019-11-27T14:18:11+00:00"
         },
         {
             "name": "symfony/polyfill-php56",
@@ -4247,7 +4247,7 @@
             "support": {
                 "source": "https://github.com/sroutier/rapyd-laravel/tree/2.2-sr"
             },
-            "time": "2018-05-10 18:33:34"
+            "time": "2018-05-10T18:33:34+00:00"
         }
     ],
     "packages-dev": [
@@ -4517,21 +4517,34 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Jeroen-G/laravel-packager.git",
-                "reference": "836b2d0adedfee14e2a76575b77dd16ac5b4cc71"
+                "reference": "5970ee14f553af3427239e07cc93b3cc25d5935d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Jeroen-G/laravel-packager/zipball/836b2d0adedfee14e2a76575b77dd16ac5b4cc71",
-                "reference": "836b2d0adedfee14e2a76575b77dd16ac5b4cc71",
+                "url": "https://api.github.com/repos/Jeroen-G/laravel-packager/zipball/5970ee14f553af3427239e07cc93b3cc25d5935d",
+                "reference": "5970ee14f553af3427239e07cc93b3cc25d5935d",
                 "shasum": ""
             },
             "require": {
-                "guzzlehttp/guzzle": "~6.0",
-                "illuminate/console": "~5",
-                "illuminate/filesystem": "~5",
-                "illuminate/support": "~5"
+                "ext-zip": "*",
+                "guzzlehttp/guzzle": "~6",
+                "illuminate/support": "~5|~6"
+            },
+            "require-dev": {
+                "orchestra/testbench": ">=3.8",
+                "phpunit/phpunit": "~8"
+            },
+            "suggest": {
+                "sensiolabs/security-checker": "Required to use the security check command"
             },
             "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "JeroenG\\Packager\\PackagerServiceProvider"
+                    ]
+                }
+            },
             "autoload": {
                 "psr-4": {
                     "JeroenG\\Packager\\": "src"
@@ -4552,12 +4565,11 @@
             "homepage": "https://github.com/Jeroen-G/laravel-packager",
             "keywords": [
                 "Skeleton",
-                "github",
                 "laravel",
                 "package",
                 "packager"
             ],
-            "time": "2016-06-27T14:24:24+00:00"
+            "time": "2019-10-30T18:25:11+00:00"
         },
         {
             "name": "mockery/mockery",
@@ -4797,8 +4809,7 @@
             "authors": [
                 {
                     "name": "Chris Boulton",
-                    "homepage": "http://github.com/chrisboulton",
-                    "role": "Original developer"
+                    "homepage": "http://github.com/chrisboulton"
                 }
             ],
             "description": "A comprehensive library for generating differences between two hashable objects (strings or arrays).",
@@ -5313,6 +5324,7 @@
                 "mock",
                 "xunit"
             ],
+            "abandoned": true,
             "time": "2015-10-02T06:51:40+00:00"
         },
         {
